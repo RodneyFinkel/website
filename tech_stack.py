@@ -23,6 +23,8 @@ def display_tech_stack():
         ![Groq](https://img.shields.io/badge/Groq-00A3FF?logo=groq&logoColor=white)
         ![Hybrid-Fusion-RAG](https://img.shields.io/badge/RAG-FF6B6B?logo=ai&logoColor=white)
         ![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)
+        ![Deepgram](https://img.shields.io/badge/Deepgram-000000?logo=deepgram&logoColor=white)
+        ![Graphragh](https://img.shields.io/badge/Graphragh-000000?logo=graphragh&logoColor=white)
         """)
 
     with col2:
@@ -30,6 +32,7 @@ def display_tech_stack():
         st.markdown("""
         ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&postgresqlColor=white)
         ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+        ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white)
         ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
         ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-FF4B4B?logo=sqlalchemy&logoColor=white)
         ![ChromaDB](https://img.shields.io/badge/ChromaDB-000000?logo=vector&logoColor=white)
@@ -38,10 +41,12 @@ def display_tech_stack():
 
         st.markdown("**Machine Learning & Analytics**")
         st.markdown("""
+        ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
         ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
         ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
         ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
         ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
+        ![Scipy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
         """)
 
     with col3:
@@ -63,6 +68,7 @@ def display_tech_stack():
         st.markdown("""
         ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-8CB0A4?logo=python&logoColor=white)
         ![yfinance](https://img.shields.io/badge/yfinance-000000?logo=yahoo&logoColor=white)
+        ![Docling]
         """)
 
     # ----------------------------------------------------
