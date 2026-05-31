@@ -24,7 +24,7 @@ def display_tech_stack():
         ![Hybrid-Fusion-RAG](https://img.shields.io/badge/RAG-FF6B6B?logo=ai&logoColor=white)
         ![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)
         ![Deepgram](https://img.shields.io/badge/Deepgram-000000?logo=deepgram&logoColor=white)
-        ![Graphrag](https://img.shields.io/badge/Graphragh-000000?logo=graphragh&logoColor=white)
+        ![Graphrag](https://img.shields.io/badge/Graphragh-000000?logo=graphrag&logoColor=white)
         """)
 
     with col2:
@@ -68,7 +68,7 @@ def display_tech_stack():
         st.markdown("""
         ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-8CB0A4?logo=python&logoColor=white)
         ![yfinance](https://img.shields.io/badge/yfinance-000000?logo=yahoo&logoColor=white)
-        ![Docling]
+        ![Doclingo](https://img.shields.io/badge/Docling-000000?logo=docling&logoColor=white)
         """)
 
     # ----------------------------------------------------
