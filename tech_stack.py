@@ -24,7 +24,7 @@ def display_tech_stack():
         ![Hybrid-Fusion-RAG](https://img.shields.io/badge/RAG-FF6B6B?logo=ai&logoColor=white)
         ![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)
         ![Deepgram](https://img.shields.io/badge/Deepgram-000000?logo=deepgram&logoColor=white)
-        ![Graphragh](https://img.shields.io/badge/Graphragh-000000?logo=graphragh&logoColor=white)
+        ![Graphrag](https://img.shields.io/badge/Graphragh-000000?logo=graphragh&logoColor=white)
         """)
 
     with col2:
