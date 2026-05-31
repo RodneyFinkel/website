@@ -47,6 +47,7 @@ def display_tech_stack():
         ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
         ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
         ![Scipy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+        ![Transformers](https://img.shields.io/badge/Transformers-000000?logo=transformers&logoColor=white)
         """)
 
     with col3:
@@ -62,13 +63,14 @@ def display_tech_stack():
         ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
         ![Gunicorn](https://img.shields.io/badge/Gunicorn-499848?logo=gunicorn&logoColor=white)
         ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+        ![Websockets](https://img.shields.io/badge/WebSockets-000000?logo=websockets&logoColor=white)
         """)
 
         st.markdown("**Data Extraction & Automation**")
         st.markdown("""
         ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-8CB0A4?logo=python&logoColor=white)
-        ![yfinance](https://img.shields.io/badge/yfinance-000000?logo=yahoo&logoColor=white)
         ![Doclingo](https://img.shields.io/badge/Docling-000000?logo=docling&logoColor=white)
+        ![Scrapy](https://img.shields.io/badge/Scrapy-000000?logo=scrapy&logoColor=white)
         """)
 
     # ----------------------------------------------------
