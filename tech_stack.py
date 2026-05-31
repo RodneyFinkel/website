@@ -1,4 +1,7 @@
 import streamlit as st
+import os
+
+
 
 def display_tech_stack():
     st.title("Rodney Alex Finkel - Tech Stack & Projects")
@@ -106,7 +109,7 @@ def display_tech_stack():
     ]
 
     # Render cards in a 2-column grid layout
-    project_cols = st.columns(2)
+    project_cols = st.columns(3)
 
     for i, project in enumerate(projects):
         # Alternate rendering between column 0 and column 1
