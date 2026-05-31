@@ -107,9 +107,14 @@ def display_tech_stack():
         }
         # You can add a 3rd or 4th project dictionary block here effortlessly!
     ]
+    
+    # Resolve absolute path relative to where this tech_stack.py file sits
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    
 
     # Render cards in a 2-column grid layout
-    project_cols = st.columns(3)
+    project_cols = st.columns(2)
 
     for i, project in enumerate(projects):
         # Alternate rendering between column 0 and column 1
