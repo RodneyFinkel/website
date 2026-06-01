@@ -1,6 +1,13 @@
 import streamlit as st
 
 
+st.set_page_config(
+    page_title="Rodney Alex Finkel - Portfolio",
+    page_icon="🛠️",
+    layout="wide", # Always opens in wide screen layout
+    initial_sidebar_state="expanded"
+)
+
 def display_tech_stack():
     st.title("Rodney Alex Finkel - Tech Stack & Projects")
     st.markdown("## 🛠️ Tech Stack")

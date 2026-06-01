@@ -1,0 +1,7 @@
+# .streamlit/config.toml
+[theme]
+base = "light"                  # Forces the light/white mode ecosystem
+primaryColor = "#00A3FF"        # Modern clean blue accent for your links and buttons
+backgroundColor = "#FFFFFF"     # Pure crisp white background
+secondaryBackgroundColor = "#F0F2F6" # Light gray for cards/containers
+textColor = "#262730"           # Dark charcoal for high contrast readability
