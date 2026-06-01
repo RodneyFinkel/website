@@ -1,8 +1,6 @@
 import streamlit as st
 
 
-
-
 def display_tech_stack():
     st.title("Rodney Alex Finkel - Tech Stack & Projects")
     st.markdown("## 🛠️ Tech Stack")
