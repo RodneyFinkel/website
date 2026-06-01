@@ -93,7 +93,7 @@ def display_tech_stack():
             "title": "FileSystem & SQL-React Agent/Dense Search Web Retriever",
             "description": "React Agent with tool bindings via Langchain and Pydantic schema validation for structured SQL queries, integrated with a custom file system retriever and vector search for enhanced RAG capabilities in web research.    ",
             "image": "static/sql_react_agent.png",  # Replace with your actual image file path or URL
-            "live_url": "https://text-analysis-bot.streamlit.app", # Set to None if not deployed
+            "live_url": "https://rodneyfinkel-text-analysis-pydantic-streamlit-app4-h4ppca.streamlit.app/", # Set to None if not deployed
             "github_url": "https://github.com/RodneyFinkel/text_analysis_pydantic"
         },
         {
