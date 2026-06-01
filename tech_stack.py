@@ -1,5 +1,5 @@
 import streamlit as st
-import os
+
 
 
 
@@ -107,9 +107,6 @@ def display_tech_stack():
         }
         # You can add a 3rd or 4th project dictionary block here effortlessly!
     ]
-    
-    # Resolve absolute path relative to where this tech_stack.py file sits
-    base_dir = os.path.dirname(os.path.abspath(__file__))
     
     
 
