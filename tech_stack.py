@@ -85,21 +85,21 @@ def display_tech_stack():
         {
             "title": "FileSystem & SQL-React Agent/Dense Search Web Retriever",
             "description": "React Agent with tool bindings via Langchain and Pydantic schema validation for structured SQL queries, integrated with a custom file system retriever and vector search for enhanced RAG capabilities in web research.    ",
-            "image": "images/sql_react_agent.png",  # Replace with your actual image file path or URL
+            "image": "static/sql_react_agent.png",  # Replace with your actual image file path or URL
             "live_url": "https://text-analysis-bot.streamlit.app", # Set to None if not deployed
             "github_url": "https://github.com/RodneyFinkel/text_analysis_pydantic"
         },
         {
             "title": "Kmeans PCA Quantitative Finance System",
             "description": "This project does k-means clustering analysis on SP500 companies using two financial ratios Rnd as a percentage of Revenue and RnD as a percentage of Operating Expenses. Injecting these two ratios into a clustering algorithm alongside price volatility to look for a signal in the possible emergence of new market segments",
-            "image": "images/quant_PCA_KMEANS.png",
+            "image": "static/quant_PCA_KMEANS.png",
             "live_url": "https://unsupervised-engine2.streamlit.app/",  
             "github_url": "https://github.com/RodneyFinkel/K-Means-Clustering"
         },
         {
             "title": "Voice Agent with Hybrid RAG and Web Search",
             "description": "Multi Modal Agent using Deepgram, Groq LPU's and Sentence Transformers for Vector Embeddings, ChromaDB for persistent vector db storage and BM25 with ColBERT reranking for sparse and dense vector search and retrieval",
-            "image": "images/hybrid_rag.png",
+            "image": "static/hybrid_rag.png",
             "live_url": None,
             "github_url": "https://github.com/RodneyFinkel/Hybrid_Rag"
         }
