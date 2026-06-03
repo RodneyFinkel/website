@@ -56,6 +56,8 @@ def display_tech_stack():
         ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
         ![Scipy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
         ![Transformers](https://img.shields.io/badge/Transformers-000000?logo=transformers&logoColor=white)
+        ![Statsmodels](https://img.shields.io/badge/Statsmodels-000000?logo=statsmodels&logoColor=white)
+        ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white)
         """)
 
     with col3:
@@ -69,6 +71,7 @@ def display_tech_stack():
         st.markdown("**DevOps & Infrastructure**")
         st.markdown("""
         ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+        ![Github Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
         ![Gunicorn](https://img.shields.io/badge/Gunicorn-499848?logo=gunicorn&logoColor=white)
         ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
         ![Websockets](https://img.shields.io/badge/WebSockets-000000?logo=websockets&logoColor=white)
