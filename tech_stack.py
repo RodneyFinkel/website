@@ -45,6 +45,7 @@ def display_tech_stack():
         ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-FF4B4B?logo=sqlalchemy&logoColor=white)
         ![ChromaDB](https://img.shields.io/badge/ChromaDB-000000?logo=vector&logoColor=white)
         ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+        ![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?logo=neo4j&logoColor=white)
         """)
 
         st.markdown("**Machine Learning & Analytics**")
