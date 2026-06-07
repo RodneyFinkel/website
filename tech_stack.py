@@ -93,7 +93,7 @@ def display_tech_stack():
     st.markdown("**Universal Approximation Theorem**")
     st.image("static/universal_approximation_theorem.png", 
              use_container_width=False,
-             width=520
+             width=520,
              caption="The Universal Approximation Theorem (Cybenko, 1989) — foundational result proving that neural networks can approximate any continuous function on a compact subset of R^n to arbitrary accuracy. This underpins the power of modern deep learning and large language models.")
     
     st.markdown("""
