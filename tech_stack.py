@@ -175,7 +175,7 @@ def display_tech_stack():
                     )
     
     st.markdown("""
-    This mathematical foundation justifies why modern neural networks (and by extension, transformer-based LLMs) are such powerful function approximators — a core principle behind the AI systems I've built.
+    This mathematical foundation justifies why modern neural networks (and by extension, transformer-based LLMs) are such powerful function approximators.
     """)
 
     st.markdown("---")
