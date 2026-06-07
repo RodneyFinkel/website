@@ -113,8 +113,16 @@ def display_tech_stack():
             "image": "static/hybrid_rag.png",
             "live_url": None,
             "github_url": "https://github.com/RodneyFinkel/Hybrid_Rag"
+        },
+        {
+            "title": "Multi-Agent FastAPI System",
+            "description": "Production-ready REST API built with FastAPI exposing three major endpoints: Full LangGraph Multi-Agent Orchestrator, Async Semantic Web Researcher with ChromaDB persistence, and dedicated ReAct NL2SQL + Filesystem Agent. Includes Swagger UI for easy testing.",
+            "image": "static/fastapi_multiagent2.png",   # ← Update this filename if different
+            "live_url": None,  # Set to your deployed URL if available
+            "github_url": "https://github.com/RodneyFinkel/text_analysis_pydantic"
         }
-        # You can add a 3rd or 4th project dictionary block here effortlessly!
+        
+        
     ]
     
     
