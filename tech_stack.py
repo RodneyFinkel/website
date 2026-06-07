@@ -107,19 +107,21 @@ def display_tech_stack():
             "live_url": "https://unsupervised-engine2.streamlit.app/",  
             "github_url": "https://github.com/RodneyFinkel/K-Means-Clustering"
         },
-        {
-            "title": "Voice Agent with Hybrid RAG and Web Search",
-            "description": "Multi Modal Agent using Deepgram, Groq LPU's and Sentence Transformers for Vector Embeddings, ChromaDB for persistent vector db storage and BM25 with ColBERT reranking for sparse and dense vector search and retrieval",
-            "image": "static/hybrid_rag.png",
-            "live_url": None,
-            "github_url": "https://github.com/RodneyFinkel/Hybrid_Rag"
-        },
+        
         {
             "title": "Multi-Agent FastAPI System",
             "description": "Production-ready REST API built with FastAPI exposing three major endpoints: Full LangGraph Multi-Agent Orchestrator, Async Semantic Web Researcher with ChromaDB persistence, and dedicated ReAct NL2SQL + Filesystem Agent. Includes Swagger UI for easy testing.",
             "image": "static/fastapi_multiagent2.png",   # ← Update this filename if different
             "live_url": None,  # Set to your deployed URL if available
             "github_url": "https://github.com/RodneyFinkel/text_analysis_pydantic"
+        },
+        
+        {
+            "title": "Voice Agent with Hybrid RAG and Web Search",
+            "description": "Multi Modal Agent using Deepgram, Groq LPU's and Sentence Transformers for Vector Embeddings, ChromaDB for persistent vector db storage and BM25 with ColBERT reranking for sparse and dense vector search and retrieval",
+            "image": "static/hybrid_rag.png",
+            "live_url": None,
+            "github_url": "https://github.com/RodneyFinkel/Hybrid_Rag"
         }
         
         
