@@ -84,6 +84,22 @@ def display_tech_stack():
         ![Doclingo](https://img.shields.io/badge/Docling-000000?logo=docling&logoColor=white)
         ![Scrapy](https://img.shields.io/badge/Scrapy-000000?logo=scrapy&logoColor=white)
         """)
+        
+        
+    # ====================== THEORETICAL FOUNDATIONS ======================
+    st.markdown("## 📐 Theoretical Foundations")
+    st.markdown("---")
+    
+    st.markdown("**Universal Approximation Theorem**")
+    st.image("static/universal_approximation_theorem.png", 
+             use_container_width=True,
+             caption="The Universal Approximation Theorem (Cybenko, 1989) — foundational result proving that neural networks can approximate any continuous function on a compact subset of R^n to arbitrary accuracy. This underpins the power of modern deep learning and large language models.")
+    
+    st.markdown("""
+    This mathematical foundation justifies why modern neural networks (and by extension, transformer-based LLMs) are such powerful function approximators — a core principle behind the AI systems I've built.
+    """)
+
+    st.markdown("---")
 
     # ----------------------------------------------------
     # 🚀 NEW SECTION: FEATURED PROJECTS
