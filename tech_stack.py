@@ -162,8 +162,7 @@ def display_tech_stack():
     
 # ====================== THEORETICAL FOUNDATIONS ======================
     st.markdown("**Theoretical Foundations")
-    st.markdown("---")
-    
+     
     st.markdown("**Universal Approximation Theorem**")
     # Centered and sized image
     col_img = st.columns([1, 2, 1])  # Creates centering effect
