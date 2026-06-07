@@ -174,10 +174,6 @@ def display_tech_stack():
                     caption="The Universal Approximation Theorem (Cybenko, 1989) — foundational result proving that neural networks can approximate any continuous function on a compact subset of R^n to arbitrary accuracy. This underpins the power of modern deep learning and large language models."
                     )
     
-    st.markdown("""
-    This mathematical foundation justifies why modern neural networks (and by extension, transformer-based LLMs) are such powerful function approximators.
-    """)
-
     st.markdown("---")
 
 if __name__ == "__main__":
