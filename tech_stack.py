@@ -109,7 +109,7 @@ def display_tech_stack():
         },
         
         {
-            "title": "Multi-Agent FastAPI System",
+            "title": "FastAPI endpoints for ReACT/Research Agents and LangGraph Orchestrator",
             "description": "Production-ready REST API built with FastAPI exposing three major endpoints: Full LangGraph Multi-Agent Orchestrator, Async Semantic Web Researcher with ChromaDB persistence, and dedicated ReAct NL2SQL + Filesystem Agent. Includes Swagger UI for easy testing.",
             "image": "static/fastapi_multiagent2.png",   # ← Update this filename if different
             "live_url": None,  # Set to your deployed URL if available
