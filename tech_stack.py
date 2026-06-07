@@ -130,24 +130,6 @@ def display_tech_stack():
         
     ]
     
-    
-    
-# ====================== THEORETICAL FOUNDATIONS ======================
-    st.markdown("## 📐 Theoretical Foundations")
-    st.markdown("---")
-    
-    st.markdown("**Universal Approximation Theorem**")
-    st.image("static/universal_approximation_theorem.png", 
-                use_container_width=False,
-                width=520,
-                caption="The Universal Approximation Theorem (Cybenko, 1989) — foundational result proving that neural networks can approximate any continuous function on a compact subset of R^n to arbitrary accuracy. This underpins the power of modern deep learning and large language models.")
-    
-    st.markdown("""
-    This mathematical foundation justifies why modern neural networks (and by extension, transformer-based LLMs) are such powerful function approximators — a core principle behind the AI systems I've built.
-    """)
-
-    st.markdown("---")
-    
 
     # Render cards in a 2-column grid layout
     project_cols = st.columns(2)
@@ -176,6 +158,27 @@ def display_tech_stack():
 
     st.markdown("---")
     st.caption("**Demonstrated through production-grade projects in AI, RAG, multi-agent systems, and quantitative finance.**")
+    
+    
+# ====================== THEORETICAL FOUNDATIONS ======================
+    st.markdown("**Theoretical Foundations")
+    st.markdown("---")
+    
+    st.markdown("**Universal Approximation Theorem**")
+    # Centered and sized image
+    col_img = st.columns([1, 2, 1])  # Creates centering effect
+    with col_img[1]:
+        st.image("static/universal_approximation_theorem.png", 
+                    use_container_width=False,
+                    width=520,
+                    caption="The Universal Approximation Theorem (Cybenko, 1989) — foundational result proving that neural networks can approximate any continuous function on a compact subset of R^n to arbitrary accuracy. This underpins the power of modern deep learning and large language models."
+                    )
+    
+    st.markdown("""
+    This mathematical foundation justifies why modern neural networks (and by extension, transformer-based LLMs) are such powerful function approximators — a core principle behind the AI systems I've built.
+    """)
+
+    st.markdown("---")
 
 if __name__ == "__main__":
     display_tech_stack()
