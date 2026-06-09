@@ -97,6 +97,15 @@ def display_tech_stack():
     # Data dictionary for your apps. Update paths and URLs here.
     projects = [
         {
+                    "title": "Multi-Agent Platform with LangGraph Orchestrator",
+                    "description": "FastAPI backend and vanilla JS frontend exposing three endpoints: LangGraph Multi-Agent Orchestrator, Async Semantic Web Researcher with ChromaDB persistence and ReAct NL2SQL + Filesystem Agent ",
+                    "image": "static/Multi-Agent-Platform.png", 
+                    "image": "static/Multi-Agent-Platform2.png",
+                    "live_url": None, # Set to None if not deployed
+                    "github_url": "https://github.com/RodneyFinkel/text_analysis_pydantic"
+        },
+        
+        {
             "title": "FileSystem & SQL-React Agent/Dense Search Web Retriever",
             "description": "React Agent with tool bindings via Langchain and Pydantic schema validation for structured SQL queries, integrated with a custom file system retriever and vector search for enhanced RAG capabilities in web research.    ",
             "image": "static/sql_react_agent.png",  # Replace with your actual image file path or URL
