@@ -76,6 +76,7 @@ def display_tech_stack():
         ![Gunicorn](https://img.shields.io/badge/Gunicorn-499848?logo=gunicorn&logoColor=white)
         ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
         ![Websockets](https://img.shields.io/badge/WebSockets-000000?logo=websockets&logoColor=white)
+        ![Yaml](https://img.shields.io/badge/Yaml-000000?logo=websockets&logoColor=white)
         """)
 
         st.markdown("**Data Extraction & Automation**")
