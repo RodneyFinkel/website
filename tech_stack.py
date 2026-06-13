@@ -115,7 +115,7 @@ def display_tech_stack():
         {
             "title": "Kmeans PCA Quantitative Finance System",
             "description": "A speculativek-means clustering, with PCA-whitening, analysis on SP500 companies using two financial ratios Rnd as a percentage of Revenue and RnD as a percentage of Operating Expenses. Injecting these two ratios into a clustering algorithm alongside price volatility to look for a signal in the possible emergence of new market segments. Cluster stability is evaluated across rolling temporal windows.",
-            "image": "static/quant_PCA_KMEANS.png",
+            "image": "static/demo_pic.png",
             "live_url": "https://unsupervised-engine2.streamlit.app/",  
             "github_url": "https://github.com/RodneyFinkel/K-Means-Clustering"
         },
