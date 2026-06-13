@@ -101,7 +101,7 @@ def display_tech_stack():
                     "title": "Multi-Agent Platform with LangGraph Orchestrator",
                     "description": "FastAPI backend and vanilla JS frontend exposing three endpoints: LangGraph Multi-Agent Orchestrator, Async Semantic Web Researcher with ChromaDB persistence and ReAct NL2SQL + Filesystem Agent ",
                     "image": "static/Multi-Agent-Platform.png", 
-                    "live_url": None, # Set to None if not deployed
+                    "live_url": "https://multi-agent-platform-alpha.onrender.com/#features", # Set to None if not deployed
                     "github_url": "https://github.com/RodneyFinkel/text_analysis_pydantic"
         },
         
