@@ -3,7 +3,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Rodney Alex Finkel - Portfolio",
-    page_icon="🛠️🧠",
+    page_icon="֎",
     layout="wide", # Always opens in wide screen layout
     initial_sidebar_state="expanded"
 )
