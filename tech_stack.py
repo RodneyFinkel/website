@@ -21,7 +21,7 @@ def display_tech_stack():
             Rodney Alex Finkel
         </h1>
         <h2 style='text-align: center; color: #6366f1; margin-top: 0;'>
-            AI / GenAI Engineer
+            ML /  AI / GenAI Engineer
         </h2>
         """, unsafe_allow_html=True)
         
