@@ -1,39 +1,40 @@
 import streamlit as st
 
-
 st.set_page_config(
-    page_title="Rodney Alex Finkel - Portfolio",
-    page_icon="🛠️",
-    layout="wide", # Always opens in wide screen layout
+    page_title="Rodney Alex Finkel - AI Engineer",
+    page_icon="🧠",
+    layout="wide",
     initial_sidebar_state="expanded"
 )
 
 def display_tech_stack():
+    # HERO SECTION
     st.markdown("""
-        <h1 style='text-align: center; font-size: 3.2rem; margin-bottom: 0.2rem;'>
-            Rodney Alex Finkel
-        </h1>
-        <h2 style='text-align: center; color: #6366f1; margin-top: 0;'>
-            AI / GenAI Engineer
-        </h2>
-        """, unsafe_allow_html=True)
-        
+    <h1 style='text-align: center; font-size: 3.2rem; margin-bottom: 0.2rem;'>
+        Rodney Alex Finkel
+    </h1>
+    <h2 style='text-align: center; color: #6366f1; margin-top: 0;'>
+        AI / GenAI Engineer
+    </h2>
+    """, unsafe_allow_html=True)
+    
     st.markdown("""
     <p style='text-align: center; font-size: 1.15rem; max-width: 800px; margin: 0 auto 2rem;'>
         3+ years hands-on building production-grade multi-agent systems, voice-enabled Hybrid RAG pipelines, 
-        and quantitative ML models. Expertise in LangGraph orchestration, real-time agents and advanced retrieval.
+        and quantitative ML models. Expertise in LangGraph orchestration, real-time agents, advanced retrieval, 
+        and financial AI applications.
     </p>
     """, unsafe_allow_html=True)
 
     col_a, col_b, col_c = st.columns([1,2,1])
     with col_b:
-        st.markdown("[**GitHub**](https://github.com/RodneyFinkel) •  • [**Email**](mailto:rodneyfinkel@gmail.com)")
+        st.markdown("[**GitHub**](https://github.com/RodneyFinkel) • [**LinkedIn**](https://linkedin.com/in/rodneyfinkel) • [**Email**](mailto:rodneyfinkel@gmail.com)")
 
     st.markdown("---")
 
     # FEATURED PROJECTS
     st.markdown("## 🚀 Featured Projects")
-   
+    st.markdown("---")
 
     projects = [
         {
@@ -57,8 +58,11 @@ def display_tech_stack():
             "live": "https://unsupervised-engine2.streamlit.app/",
             "github": "https://github.com/RodneyFinkel/K-Means-Clustering"
         }
+        
+        
+        
     ]
-    
+
     cols = st.columns(3)
     for idx, proj in enumerate(projects):
         with cols[idx]:
@@ -72,25 +76,10 @@ def display_tech_stack():
                         st.link_button("🚀 Live Demo", proj["live"], use_container_width=True)
                 with c2:
                     st.link_button("💻 GitHub", proj["github"], use_container_width=True)
-    
+
     st.markdown("---")
     st.markdown("## 🛠️ Core Tech Stack")
-        
-    col1, col2, col3 = st.columns([1, 1, 1])
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    # Tech Stack Columns
     col1, col2, col3 = st.columns([1, 1, 1])
 
     with col1:
@@ -162,31 +151,19 @@ def display_tech_stack():
         ![Doclingo](https://img.shields.io/badge/Docling-000000?logo=docling&logoColor=white)
         ![Scrapy](https://img.shields.io/badge/Scrapy-000000?logo=scrapy&logoColor=white)
         """)
-        
-        
-    
 
-    
+    # (Your existing tech stack columns can stay or be slightly cleaned — I kept them intact for now)
 
-    # Render cards in a 2-column grid layout
-  
-   
-    
-    
-# ====================== THEORETICAL FOUNDATIONS ======================
-    st.markdown("**Theoretical Foundations")
-     
-    st.markdown("**Universal Approximation Theorem**")
-    # Centered and sized image
-    col_img = st.columns([1, 2, 1])  # Creates centering effect
-    with col_img[1]:
-        st.image("static/universal_approximation_theorem.png", 
-                    use_container_width=False,
-                    width=520,
-                    caption="The Universal Approximation Theorem (Cybenko, 1989) — foundational result proving that neural networks can approximate any continuous function on a compact subset of R^n to arbitrary accuracy. This underpins the power of modern deep learning and large language models."
-                    )
-    
-    st.markdown("---")
+    col1, col2, col3 = st.columns([1,1,1])
+    with col1:
+        st.markdown("**AI & LLM**")
+        st.markdown("LangGraph • LangChain • Groq • Hybrid RAG • Deepgram • ChromaDB • ColBERT")
+    with col2:
+        st.markdown("**ML & Quantitative**")
+        st.markdown("PyTorch • scikit-learn • PCA Whitening • SHAP • Pandas/NumPy")
+    with col3:
+        st.markdown("**Production**")
+        st.markdown("FastAPI • Flask • Docker • Redis • Streamlit • Gunicorn")
 
 if __name__ == "__main__":
     display_tech_stack()
