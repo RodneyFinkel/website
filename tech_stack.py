@@ -84,7 +84,7 @@ def display_tech_stack():
     
     
         # FEATURED PROJECTS
-    
+    st.markdown("## ֎ Tech Stack")
     
     badges = [
     "https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white",
