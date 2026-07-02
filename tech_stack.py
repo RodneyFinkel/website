@@ -60,24 +60,45 @@ def display_tech_stack():
             "image": "static/clusters.png",
             "live": "https://unsupervised-engine2.streamlit.app/",
             "github": "https://github.com/RodneyFinkel/K-Means-Clustering"
+        },
+        {
+            "title": "NL2SQL and FileSystem ReAct Agent with LangSmith Tracing",
+            "desc": "NL2SQL and FileSystem ReAct Agent with LangSmith Tracing",
+            "image": "static/react_agent.png",
+            "live": None,
+            "github": "https://github.com/RodneyFinkel/ReAct_Agent"
         }
     ]
     
-    cols = st.columns(3)
-    for idx, proj in enumerate(projects):
-        with cols[idx]:
-            with st.container(border=True):
-                st.subheader(proj["title"])
-                st.image(proj["image"], use_container_width=True)
-                st.write(proj["desc"])
-                c1, c2 = st.columns(2)
-                with c1:
-                    if proj["live"]:
-                        st.link_button("🚀 Live Demo", proj["live"], use_container_width=True)
-                with c2:
-                    st.link_button("💻 GitHub", proj["github"], use_container_width=True)
     
-  
+    
+     # Display projects in rows of 3
+    for row_start in range(0, len(projects), 3):
+        cols = st.columns(3)
+
+        for col, proj in zip(cols, projects[row_start:row_start + 3]):
+            with col:
+                with st.container(border=True, height=520):
+                    st.subheader(proj["title"])
+                    st.image(proj["image"], use_container_width=True)
+                    st.write(proj["desc"])
+
+                    c1, c2 = st.columns(2)
+
+                    with c1:
+                        if proj.get("live"):
+                            st.link_button(
+                                "🚀 Live Demo",
+                                proj["live"],
+                                use_container_width=True,
+                            )
+
+                    with c2:
+                        st.link_button(
+                            "💻 GitHub",
+                            proj["github"],
+                            use_container_width=True,
+                        )
     
         
     
