@@ -64,7 +64,7 @@ def display_tech_stack():
         {
             "title": "NL2SQL and FileSystem ReAct Agent with LangSmith Tracing",
             "desc": "NL2SQL and FileSystem ReAct Agent with LangSmith Tracing",
-            "image": "static/react_agent.png",
+            "image": "static/upload1.png",
             "live": "https://nl2sql-agent-fqwd.onrender.com",
             "github": "https://github.com/RodneyFinkel/ReAct_Agent"
         }
