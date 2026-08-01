@@ -27,7 +27,7 @@ def display_tech_stack():
         
     st.markdown("""
     <p style='text-align: center; font-size: 1.15rem; max-width: 800px; margin: 0 auto 2rem;'>
-        3+ years hands-on building production-grade multi-agent systems, voice-enabled Hybrid RAG pipelines, 
+        3+ years developing and deploying multi-agent systems, voice-enabled Hybrid RAG pipelines, 
         and quantitative ML models. Expertise in LangGraph orchestration, real-time agents and advanced retrieval.
     </p>
     """, unsafe_allow_html=True)
