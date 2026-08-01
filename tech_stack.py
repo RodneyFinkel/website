@@ -37,7 +37,7 @@ def display_tech_stack():
     
 
 
-    st.markdown("## 🚀 Featured Projects")
+    st.markdown("## ֎ Demos & Docker Images")
     
     projects = [
         {
