@@ -664,73 +664,11 @@
 
     .fade-enter { opacity: 0; transform: translateY(14px); }
     .fade-enter-active { transition: opacity 0.65s ease, transform 0.65s ease; }
-
-    /* ---------- matrix rain modal ---------- */
-    .matrix-modal {
-      position: fixed;
-      inset: 0;
-      z-index: 110;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .matrix-modal canvas {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    .matrix-close {
-      position: absolute;
-      top: 1.2rem;
-      right: 1.4rem;
-      z-index: 2;
-      background: rgba(0,0,0,0.55);
-      border: 1px solid rgba(0,255,70,0.35);
-      color: #00ff41;
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.45rem 0.85rem;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.15s, border-color 0.15s;
-    }
-
-    .matrix-close:hover {
-      background: rgba(0,40,10,0.8);
-      border-color: #00ff41;
-    }
-
-    .matrix-trigger {
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      background: none;
-      border: 1px solid transparent;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: color 0.2s, border-color 0.2s;
-    }
-
-    .matrix-trigger:hover {
-      color: #00aa33;
-      border-color: rgba(0,170,50,0.35);
-    }
   </style>
 </head>
 <body
   x-data="{
     ready: false,
-    matrixOpen: false,
     lightbox: { open: false, src: '', images: [], index: 0 },
     init() { setTimeout(() => { this.ready = true }, 120); },
     openLightbox(src, images, index) {
@@ -750,20 +688,10 @@
       const n = this.lightbox.images.length;
       this.lightbox.index = (this.lightbox.index + 1) % n;
       this.lightbox.src = this.lightbox.images[this.lightbox.index];
-    },
-    openMatrix() {
-      this.matrixOpen = true;
-      document.body.style.overflow = 'hidden';
-      this.$nextTick(() => { if (window.startMatrixRain) window.startMatrixRain(); });
-    },
-    closeMatrix() {
-      this.matrixOpen = false;
-      document.body.style.overflow = '';
-      if (window.stopMatrixRain) window.stopMatrixRain();
     }
   }"
   x-init="init()"
-  @keydown.escape.window="if (matrixOpen) closeMatrix(); else if (lightbox.open) closeLightbox()"
+  @keydown.escape.window="if (lightbox.open) closeLightbox()"
   @keydown.arrow-left.window="if (lightbox.open) lightboxPrev()"
   @keydown.arrow-right.window="if (lightbox.open) lightboxNext()"
 >
@@ -790,7 +718,7 @@
       x-transition:enter-end=""
     >
       <div class="badge">available for opportunities</div>
-      <h1>֎ Rodney Alex Finkel</h1>
+      <h1>Rodney Alex Finkel</h1>
       <p class="subtitle">ML / AI / GenAI Engineer</p>
       <p class="tagline">
         3+ years developing and deploying multi-agent systems, voice-enabled Hybrid RAG pipelines,
@@ -1131,22 +1059,12 @@
     </div>
   </div>
 
-  <!-- MATRIX RAIN MODAL -->
-  <div
-    class="matrix-modal"
-    x-show="matrixOpen"
-    x-cloak
-    @click.self="closeMatrix()"
-  >
-    <canvas id="matrix-canvas"></canvas>
-    <button type="button" class="matrix-close" @click="closeMatrix()" aria-label="Close">Exit · Esc</button>
-  </div>
-
   <footer>
     <span>rodney alex finkel · portfolio</span>
-    <button type="button" class="matrix-trigger" @click="openMatrix()" title="Matrix rain">enter the matrix</button>
     <span>built with alpine.js · 2026</span>
   </footer>
+
+
 
   <script>
     function gallery(images) {
@@ -1187,93 +1105,6 @@
         }
       }
     }
-
-    // ---- Matrix rain (canvas port of the curses script) ----
-    let matrixAnimId = null;
-    let matrixRunning = false;
-
-    window.startMatrixRain = function () {
-      const canvas = document.getElementById('matrix-canvas');
-      if (!canvas) return;
-      const ctx = canvas.getContext('2d');
-
-      function resize() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      }
-      resize();
-
-      if (!window._matrixResizeBound) {
-        window.addEventListener('resize', () => {
-          if (matrixRunning) resize();
-        });
-        window._matrixResizeBound = true;
-      }
-
-      const fontSize = 16;
-      const chars =
-        '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%^&*()' +
-        'אבגדהוזחטיכלמנסעפצקרשת';
-      const hangul = '가나다라마바사아자차카타파하거너더러머버서어저처커터퍼허고노도로모보소오조초코토포호';
-      const charset = chars + hangul;
-
-      let drops = Array.from(
-        { length: Math.floor(canvas.width / fontSize) },
-        () => Math.random() * -40
-      );
-
-      matrixRunning = true;
-
-      function draw() {
-        if (!matrixRunning) return;
-
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.font = fontSize + 'px "IBM Plex Mono", monospace';
-
-        const cols = Math.floor(canvas.width / fontSize);
-        if (cols !== drops.length) {
-          drops = Array.from({ length: cols }, (_, i) => drops[i] ?? Math.random() * -40);
-        }
-
-        for (let i = 0; i < drops.length; i++) {
-          const ch = charset[Math.floor(Math.random() * charset.length)];
-          const x = i * fontSize;
-          const y = drops[i] * fontSize;
-
-          ctx.fillStyle = '#b6ffc0';
-          ctx.fillText(ch, x, y);
-
-          if (Math.random() > 0.9 && y > fontSize) {
-            ctx.fillStyle = '#00aa33';
-            ctx.fillText(
-              charset[Math.floor(Math.random() * charset.length)],
-              x,
-              y - fontSize
-            );
-          }
-
-          if (y > canvas.height && Math.random() > 0.975) {
-            drops[i] = 0;
-          }
-          drops[i]++;
-        }
-
-        matrixAnimId = requestAnimationFrame(draw);
-      }
-
-      ctx.fillStyle = '#000';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      draw();
-    };
-
-    window.stopMatrixRain = function () {
-      matrixRunning = false;
-      if (matrixAnimId) {
-        cancelAnimationFrame(matrixAnimId);
-        matrixAnimId = null;
-      }
-    };
   </script>
 </body>
 </html>
