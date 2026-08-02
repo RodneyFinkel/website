@@ -828,7 +828,7 @@
       </article>
 
       <!-- Project 3: Clustering -->
-      <article class="project-card" x-data="gallery(['static/clusters.png','static/demo_pic.png','static/clustering_3.png'])">
+      <article class="project-card" x-data="gallery(['static/clusters.png','static/demo_pic.png','static/shap.png'])">
         <div class="project-gallery">
           <div class="gallery-track" x-ref="track" @scroll.debounce.50ms="updateDot()">
             <div class="gallery-slide">
@@ -842,7 +842,7 @@
               <div class="gallery-placeholder" style="display:none">Clustering · Screen 2</div>
             </div>
             <div class="gallery-slide">
-              <img src="static/clustering_3.png" @click="open(2)" alt="Clustering screenshot 3"
+              <img src="static/shap.png" @click="open(2)" alt="Clustering screenshot 3"
                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
               <div class="gallery-placeholder" style="display:none">Clustering · Screen 3</div>
             </div>
